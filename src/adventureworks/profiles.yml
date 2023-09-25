@@ -1,0 +1,9 @@
+adventureworks:
+  target: duckdb # leave this as duckdb, or change this to your chosen database
+
+  # supported databases: duckdb, postgres 
+  outputs:
+    duckdb: 
+     type: duckdb
+     path: /data/duckdb/adventureworks.duckdb
+     threads: 12

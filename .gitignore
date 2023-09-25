@@ -1,1 +1,7 @@
 config_template.xml
+jenkins-runner.sh
+logs/*
+ref/*
+.vscode
+data/*
+src/logs

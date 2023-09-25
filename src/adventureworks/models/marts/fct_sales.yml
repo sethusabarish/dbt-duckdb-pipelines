@@ -1,0 +1,18 @@
+version: 1
+
+models:
+  - name: fct_sales
+    columns:
+      - name: sales_key
+        description: Surrogate key of the fct sales
+        tests:
+          - not_null
+          - unique
+      - name: unitprice
+        description: Per Unit price of the product
+        tests:
+          - not_null 
+      - name: revenue
+        description: Revenue from the sales order item (unit price x order qty)
+        tests:
+          - revenue_gt_0
